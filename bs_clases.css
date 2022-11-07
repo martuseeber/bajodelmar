@@ -1,0 +1,38 @@
+.clases_sub{
+    font-family: 'Acme';
+    font-size: 1.75em;
+    color: #6C0D08;
+    display: flex;
+    margin-top: 1cm;
+}
+.card_info{
+    border-color: #6C0D08;
+}
+.clases_titulo{
+    color: #6C0D08;
+    font-weight: 900;
+}
+.clases_info{
+    text-align: justify;
+    font-size: 1rem;
+    color: #6C0D08;
+}
+.clases_aranceles{
+    border-color: #414141;
+}
+.card-header{
+    color: white;
+    background-color: #6C0D08;
+}
+.aclaracion{
+    font-size: 1.5rem;
+}
+.formulario{
+    background-color: #12416B;
+    margin-top: 1cm;
+    border-radius: 1cm;
+    padding: 0.5cm;
+    color: white;
+    text-align: left;
+    margin-bottom: 1cm;
+}

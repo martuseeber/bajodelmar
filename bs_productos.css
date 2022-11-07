@@ -1,0 +1,26 @@
+.prod_titulo{
+    font-family: 'Acme';
+    font-size: 1.85em;
+    color: #6C0D08;
+    display: flex;
+    margin-top: 1cm;
+}
+.prod_sub{
+    font-size: medium;
+    font-style: italic;
+    text-align: left;
+}
+.viento{
+    font-size: 1.35em;
+    display: flex;
+    margin-top: 1cm;
+    font-weight: 900;
+}
+.prod_card{
+    border-color: #12416B;
+    background-color: #12416B;
+    color: white;
+}
+.col{
+    margin-bottom: 1cm;
+}

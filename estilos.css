@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap');
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	text-align: center;
+	min-height: 100%;
+	background-image: url(imgs/body.png);
+	background-size: cover;
+	font-family: 'Montserrat';
+}
+.grid_container{
+	display: grid;
+	grid-template: 
+	"header" auto
+	"main"	auto
+	"footer" 100px;
+}
+body{
+	text-align: center;
+	min-height: 100%;
+	background-image: url(imgs/body.png);
+	background-size: cover;
+
+}
+.header{
+	grid-area: header;
+	display: flex;
+	flex-direction: column;
+}
+.logoh{
+	margin-top: 0.15cm;
+	width: 78.9px;
+	height: 91px;
+	margin-left: 0.2cm;
+	margin-bottom: 0.2cm;
+}
+
+nav{
+	display: none;
+}
+.icono{
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 90%;
+	margin-top: 0.5cm;
+	margin-bottom: 0.5cm;
+	margin-right: 0.5cm;
+	text-align: right;
+}
+.fa-bars:before{
+	font-size: 2rem;
+	color: #12416B;
+}
+.responsive{
+	display:block;
+	text-align: right;
+	padding-right: 0.5cm;
+	padding-bottom: 0.25cm;
+	background-color: #cfd9e1;
+}
+
+.pagina{
+	text-decoration: none;
+	border: 1cm;
+	color: #12416B;
+	display: flex;
+	flex-direction: column;
+	padding-top: 0.25cm;
+	padding-left: 0.25cm;
+}
+.footer{
+	grid-area: footer;
+	display:flex ;
+	align-items: center;
+    justify-content: space-between;
+	border-top:#12416B solid 0.05cm ;
+	background-color: #ffffff;
+}
+.logof{
+	grid-area: logo;
+	width: 60px;
+	height: 69px;
+	margin-left: 0.2cm;
+}
+.links{
+	grid-area: links;
+	margin-right: 0.25cm;
+}
+.redes1{
+	width: 58.44px;
+	height: 50px;
+}
+.redes2{
+	width: 51.75px;
+	height: 51.5px;
+}
+.redes3{
+	width: 52px;
+	height: 51.5px;
+}
+.lfooter{
+	width: 78.9px;
+	height: 91px;
+}
+.red1{
+	width: 57,75px;
+}
+/*INDEX*/
+.main_index{
+	grid-area: main;
+	font-size: 1.15em;
+}
+.nosotros{
+	grid-area: nosotros;
+	display: flex;
+	flex-direction: column;
+    flex-wrap: wrap;
+	background-color: #EFEFEF;
+	margin-top: 0.5cm;
+	margin-bottom: 0.5cm;
+}
+.nosotros img{
+	width: 100%;
+	grid-area: foto;
+}
+.subtitulo1{
+	font-family: 'Acme';
+	color: #6C0D08;
+	text-align: center;
+	margin-bottom: 0.2cm;
+}
+.texto1{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1cm;
+	color: #6C0D08;
+	text-align: justify;
+	grid-area: texto;
+}
+.banner{
+	width: 100%;
+	margin-top: 0.7cm;
+	margin-bottom: 0.7cm;
+}
+.equipo{
+	grid-area: equipo;
+	margin-bottom: 1cm;
+}
+.equipotitulo{
+	font-family: 'Acme';
+	color: #6C0D08;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-left: 0.5cm;
+}
+.fotoequipo{
+	height: 175px;
+}
+.ariel{
+	grid-area: ariel;
+}
+.eric{
+	grid-area: eric;
+}
+.sebastian{
+	grid-area: sebastian;
+}
+.flounder{
+	grid-area: flounder;
+}
+/*FIN IDEX*/
+/*PRODUCTOS*/
+/*FIN PRODUCTOS*/
+/*CLASES*/
+
+/*FIN CLASES*/
+@media (min-width: 768px) and (max-width: 991px) {
+
+	.grid_container{
+		grid-template: 
+		"header 	header" 	100px 
+		"main	 	main" 		auto
+		"footer 	footer" 	100px /
+		200px 		auto;
+	}
+	.main{
+		font-size: 1.5em;
+	}
+	.header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+
+	.equipo{
+		grid-area: equipo;
+		display: grid;
+		grid-template: 
+		"titulo		titulo" 85px
+		"ariel		eric" 175px
+		"texto1		texto2" 70px
+		"sebastian	flounder" 175px
+		"texto3		texto4" 70px /
+		1fr			1fr;
+		margin-bottom: 1cm;
+	}
+	nav{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-evenly;
+		margin-left: 3cm;
+	}
+	.pagina{
+		text-decoration: none;
+		color: #ffffff;
+		border: 1cm;
+		background-color: #12416B;
+		padding: 0.45cm;
+		border-radius: 1cm;
+		margin-right: 1cm;
+
+	}
+	.pagina:hover{
+		color: #ffffff;
+		background-color: #5a738a;
+	}
+
+	.icono{
+		display: none;
+	}
+	.fa-bars:before{
+		display: none;
+	}
+	.responsive{
+		display:none;
+	}
+	
+	
+	
+}
+
+
+@media (min-width: 992px) and (max-width:1199px) {
+	.grid_container{
+		grid-template: 
+		"header 	header 	header		header" 	100px
+		"main	 	main 	main		main" 		auto
+		"footer 	footer 	footer		footer" 	80px /
+		1fr 		1fr 	1fr			1fr;
+	}
+	.main{
+		font-size: 1.525em;
+	}
+	.header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.nosotros{
+		grid-area: nosotros;
+		background-color: #EFEFEF;
+		margin-top: 0.5cm;
+		display: grid;
+		grid-template:
+		"foto	texto" auto /
+		1fr		1fr;
+	}
+
+	.equipo{
+		grid-area: equipo;
+		display: grid;
+		grid-template: 
+		"titulo		titulo		titulo		titulo" 85px
+		"ariel		eric		sebastian	flounder" 175px
+		"texto		texto		texto		texto" 70px /
+		1fr			1fr			1fr			1fr	;
+		margin-bottom: 1cm;
+	}
+	.equipotitulo{
+		grid-area: titulo;
+	}
+	nav{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	.pagina{
+		text-decoration: none;
+		color: #ffffff;
+		border: 1cm;
+		background-color: #12416B;
+		padding: 0.45cm;
+		border-radius: 1cm;
+		margin-right: 1cm;
+	}
+	.pagina:hover{
+		color: #ffffff;
+		background-color: #5a738a;
+	}
+	.icono{
+		display: none;
+	}
+	.fa-bars:before{
+		display: none;
+	}
+	.responsive{
+		display:none;
+	}
+	.footer{
+		padding-left: 0.25cm;
+	}
+	
+	
+}
+@media (min-width:1200px) {
+	.grid_container{
+		width: 90%;
+		margin: auto;
+		grid-template: 
+		"header 	header 	header		header" 	100px
+		"main	 	main 	main		main" 		auto
+		"footer 	footer 	footer		footer" 	100px /
+		1fr 		1fr 	1fr			1fr;
+	}
+	body{
+		text-align: center;
+		min-height: 100%;
+		background-image: url(imgs/body.png);
+		background-size: cover;
+	
+	}
+	.header{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	nav{
+		grid-area: navbar;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	.pagina{
+		text-decoration: none;
+		color: #ffffff;
+		border: 1cm;
+		background-color: #12416B;
+		padding: 0.45cm;
+		border-radius: 1cm;
+		margin-right: 1cm;
+
+	}
+	.pagina:hover{
+		color: #ffffff;
+		background-color: #5a738a;
+	}
+	.icono{
+		display: none;
+	}
+	.fa-bars:before{
+		display: none;
+	}
+	.responsive{
+		display:none;
+	}
+	
+	.main{
+		font-size: 1.55em;
+	}
+	.nosotros{
+		grid-area: nosotros;
+		background-color: #EFEFEF;
+		margin-top: 0.5cm;
+		display: grid;
+		grid-template:
+		"foto	texto" auto /
+		1fr		1fr;
+	}
+	
+	.equipo{
+		grid-area: equipo;
+		display: grid;
+		grid-template: 
+		"titulo		titulo		titulo		titulo" 85px
+		"ariel		eric		sebastian	flounder" 175px
+		"texto		texto		texto		texto" 70px /
+		1fr			1fr			1fr			1fr	;
+		margin-bottom: 1cm;
+	}
+	.equipotitulo{
+		grid-area: titulo;
+	}
+	.footer{
+		background-color: transparent;
+	}
+
+}

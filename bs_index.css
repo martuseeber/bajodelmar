@@ -1,0 +1,26 @@
+.card{
+    margin-top: 1cm;
+    background-color:#EFEFEF;
+}
+.card-body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    color: #6C0D08;
+
+}
+.card-title{
+	font-family: 'Acme';
+    font-size: 1.75em;
+}
+.card-text{
+    padding-left: 0.5cm;
+    padding-right: 0.5cm;
+	text-align: justify;
+}
+.carousel{
+    margin-top: 2cm;
+    margin-bottom: 2cm;
+}
