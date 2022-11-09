@@ -5,12 +5,12 @@
     display: flex;
     margin-top: 1cm;
 }
-.prod_sub{
+.prod_texto{
     font-size: medium;
     font-style: italic;
     text-align: left;
 }
-.viento{
+.prod_sub{
     font-size: 1.35em;
     display: flex;
     margin-top: 1cm;
@@ -23,4 +23,21 @@
 }
 .col{
     margin-bottom: 1cm;
+}
+.formulario{
+    background-color: #EFEFEF;
+    margin-top: 1cm;
+    border-radius: 1cm;
+    padding: 0.5cm;
+    color: black;
+    text-align: left;
+    margin-bottom: 1cm;
+}
+.btn{
+    background-color: #6C0D08;
+    color: white;
+}
+.btn:hover{
+    background-color: #705352;
+    color: white;
 }
