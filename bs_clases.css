@@ -36,3 +36,29 @@
     text-align: left;
     margin-bottom: 1cm;
 }
+@media (max-width: 768px) {
+    .clases{
+        margin-left: 0.25cm;
+    }
+    .card_info{
+        width: 450px;
+        height: 450px;
+        margin: auto;
+    }
+    .clases_aranceles{
+        width: 450px;
+        margin: auto;
+    }
+    .row{
+        width: 100%;
+    }
+    .col{
+        margin-left: 0.25cm;
+    }
+
+    .formulario{
+        width: 450px;
+        margin: auto;
+        margin-bottom: 1cm;
+    }
+}
