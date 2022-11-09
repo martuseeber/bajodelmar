@@ -33,6 +33,7 @@ body{
 	grid-area: header;
 	display: flex;
 	flex-direction: column;
+	text-align: left;
 }
 .logoh{
 	margin-top: 0.15cm;

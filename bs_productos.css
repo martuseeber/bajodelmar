@@ -41,3 +41,19 @@
     background-color: #705352;
     color: white;
 }
+
+@media (max-width: 768px) {
+    .productos{
+        margin-left: 0.25cm;
+    }
+    .prod_card, col{
+        width: 450px;
+        height: 450px;
+        margin: auto;
+    }
+    .formulario{
+        display: flex;
+        padding-left: 0.25cm;
+        padding-right: 0.25cm;
+    }
+}
