@@ -21,6 +21,9 @@
     background-color: #12416B;
     color: white;
 }
+.prod_card:hover{
+    background-color: #5a7b99;
+}
 .col{
     margin-bottom: 1cm;
 }
